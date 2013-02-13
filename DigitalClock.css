@@ -1,0 +1,200 @@
+/**
+ *    11111
+ *    2   3
+ *    2   3
+ *    44444
+ *    5   6
+ *    5   6
+ *    77777
+ */
+
+body {
+  background: #000;
+}
+
+.digital-clock {
+  width: 510px;
+  padding: 30px;
+}
+
+.digital-clock li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.digital-clock ul {
+  padding: 0;
+}
+
+.digital-clock .digit li {
+  position: absolute;
+  background: rgb(85, 123, 211);
+  border-radius: 5px;
+  opacity: 0;
+
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.digital-clock .digit {
+  position: relative;
+  width: 50px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.digital-clock .colon {
+  position: relative;
+  width: 10px;
+  height: 100px;
+  margin-right: 20px;
+  opacity: .1;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.digital-clock .colon.active {
+  opacity: .7;
+}
+
+.digital-clock .colon li {
+  display: block;
+  position: absolute;
+  border-radius: 10px;
+  background: rgb(85, 123, 211);
+  height: 15%;
+  width: 100%;
+}
+
+.digital-clock .colon li:nth-child(1) {
+    top: 30%;
+}
+
+.digital-clock .colon li:nth-child(2) {
+    bottom: 30%;
+}
+
+.digital-clock .digit.zero li:nth-child(1),
+.digital-clock .digit.zero li:nth-child(2),
+.digital-clock .digit.zero li:nth-child(3),
+.digital-clock .digit.zero li:nth-child(5),
+.digital-clock .digit.zero li:nth-child(6),
+.digital-clock .digit.zero li:nth-child(7) {
+  opacity: .8;
+}
+
+.digital-clock .digit.one li:nth-child(3),
+.digital-clock .digit.one li:nth-child(6) {
+  opacity: .8;
+}
+
+.digital-clock .digit.two li:nth-child(1),
+.digital-clock .digit.two li:nth-child(3),
+.digital-clock .digit.two li:nth-child(4),
+.digital-clock .digit.two li:nth-child(5),
+.digital-clock .digit.two li:nth-child(7) {
+  opacity: .8;
+}
+
+.digital-clock .digit.three li:nth-child(1),
+.digital-clock .digit.three li:nth-child(3),
+.digital-clock .digit.three li:nth-child(4),
+.digital-clock .digit.three li:nth-child(6),
+.digital-clock .digit.three li:nth-child(7) {
+  opacity: .8;
+}
+
+.digital-clock .digit.four li:nth-child(2),
+.digital-clock .digit.four li:nth-child(3),
+.digital-clock .digit.four li:nth-child(4),
+.digital-clock .digit.four li:nth-child(6) {
+  opacity: .8;
+}
+
+.digital-clock .digit.five li:nth-child(1),
+.digital-clock .digit.five li:nth-child(2),
+.digital-clock .digit.five li:nth-child(4),
+.digital-clock .digit.five li:nth-child(6),
+.digital-clock .digit.five li:nth-child(7) {
+  opacity: .8;
+}
+
+.digital-clock .digit.six li:nth-child(1),
+.digital-clock .digit.six li:nth-child(2),
+.digital-clock .digit.six li:nth-child(4),
+.digital-clock .digit.six li:nth-child(5),
+.digital-clock .digit.six li:nth-child(6),
+.digital-clock .digit.six li:nth-child(7) {
+  opacity: .8;
+}
+
+.digital-clock .digit.seven li:nth-child(1),
+.digital-clock .digit.seven li:nth-child(3),
+.digital-clock .digit.seven li:nth-child(6) {
+  opacity: .8;
+}
+
+.digital-clock .digit.eight li:nth-child(1),
+.digital-clock .digit.eight li:nth-child(2),
+.digital-clock .digit.eight li:nth-child(3),
+.digital-clock .digit.eight li:nth-child(4),
+.digital-clock .digit.eight li:nth-child(5),
+.digital-clock .digit.eight li:nth-child(6),
+.digital-clock .digit.eight li:nth-child(7) {
+  opacity: .8;
+}
+
+.digital-clock .digit.nine li:nth-child(1),
+.digital-clock .digit.nine li:nth-child(2),
+.digital-clock .digit.nine li:nth-child(3),
+.digital-clock .digit.nine li:nth-child(4),
+.digital-clock .digit.nine li:nth-child(6) {
+  opacity: .8;
+}
+
+.digital-clock .digit li:nth-child(1),
+.digital-clock .digit li:nth-child(4),
+.digital-clock .digit li:nth-child(7) {
+  width: 80%;
+  height: 8%;
+  left: 10%;
+}
+
+.digital-clock .digit li:nth-child(2),
+.digital-clock .digit li:nth-child(3),
+.digital-clock .digit li:nth-child(5),
+.digital-clock .digit li:nth-child(6) {
+  width: 15%;
+  height: 35%;
+}
+
+.digital-clock .digit li:nth-child(1) {
+  top: 0;
+}
+
+.digital-clock .digit li:nth-child(2) {
+  top: 10%;
+}
+
+.digital-clock .digit li:nth-child(3) {
+  top: 10%;
+  right: 0;
+}
+
+.digital-clock .digit li:nth-child(4) {
+  top: 50%;
+  margin-top: -8%;
+}
+
+.digital-clock .digit li:nth-child(5) {
+  bottom: 10%;
+  left: 0;
+}
+
+.digital-clock .digit li:nth-child(6) {
+  bottom: 10%;
+  right: 0;
+}
+.digital-clock .digit li:nth-child(7) {
+  bottom: 0;
+}
